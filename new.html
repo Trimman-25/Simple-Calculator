@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculator</title>
+    <link rel="stylesheet" href="new.css">
+</head>
+<body>
+    <div class="container">
+        
+        <!-- Display Screen -->
+        <div class="display">
+            <p id="result">0</p>
+        </div>
+
+        <div class="bgm">
+        <div class="buttons">
+            <p class="AC" onclick="clearDisplay()">AC</p>
+            <p class="per" onclick="appendOperator('%')">%</p>
+            <p class="delete" onclick="deleteLast()">delete</p>
+        </div>
+
+        <div class="set1">
+            <p onclick="appendNumber('7')">7</p>
+            <p onclick="appendNumber('8')">8</p>
+            <p onclick="appendNumber('9')">9</p>
+            <p onclick="appendOperator('/')">÷</p>
+        </div>
+
+        <div class="set2">
+            <p onclick="appendNumber('4')">4</p>
+            <p onclick="appendNumber('5')">5</p>
+            <p onclick="appendNumber('6')">6</p>
+            <p onclick="appendOperator('-')">-</p>
+        </div>
+
+        <div class="set3">
+            <p onclick="appendNumber('1')">1</p>
+            <p onclick="appendNumber('2')">2</p>
+            <p onclick="appendNumber('3')">3</p>
+            <p onclick="appendOperator('+')">+</p>
+        </div>
+
+        <div class="set4">
+            <p onclick="appendNumber('00')">00</p>
+            <p onclick="appendNumber('0')">0</p>
+            <p onclick="appendNumber('.')">.</p>
+            <p onclick="calculateResult()">=</p>
+        </div>
+    </div>
+
+    </div>
+    <script src="new.js"></script> 
+</body>
+</html>

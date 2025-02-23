@@ -1,0 +1,92 @@
+/* Reset default margin & padding */
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+/* Full-Screen Gradient Background */
+body {
+    height: 100vh;
+    /* background: linear-gradient(135deg, #73C7C7, #F5F4B3, #C4D9FF, #37AFE1); */
+    background: linear-gradient(rgba(0, 23,36 , 0.8), rgba(0, 23, 36, 0.8)), 
+    url("https://i.pinimg.com/736x/fc/ae/9d/fcae9d1f25c4fda0471505e0976beb38.jpg");
+
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.container {
+    background: rgba(255, 255, 255, 0.2); 
+    background: linear-gradient(135deg, #73C7C7, #F5F4B3, #C4D9FF, #37AFE1);
+    padding: 20px;
+    border-radius: 15px;
+    box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.2);
+    text-align: center;
+}
+
+
+.display {
+    width: 100%;
+    height: 60px;
+    background: linear-gradient(90deg, #FFF2AF, #DAD2FF, #B2A5FF, #493D9E);
+    text-align: right;
+    font-size: 30px;
+    padding: 10px;
+    border-radius: 10px;
+    margin-bottom: 15px;
+    font-weight: bold;
+    color: white;
+    box-shadow: inset 2px 2px 5px rgba(0, 0, 0, 0.2);
+}
+
+
+.buttons, .set1, .set2, .set3, .set4 {
+    display: flex;
+    gap: 10px;
+    font-size: 25px;
+    justify-content: center;
+    margin-bottom: 10px;
+}
+
+
+.bgm {
+    background: url("https://i.redd.it/all-the-one-piece-icons-ive-made-to-date-v0-akpg1inj9kfc1.jpg?width=1440&format=pjpg&auto=webp&s=b9df2130490c672c9feaf5bf5c6885ab80353ef0");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+/* Button Styling */
+.delete, .AC, .per, .set1 p, .set2 p, .set3 p, .set4 p {
+    border-radius: 50%; 
+    padding: 15px; 
+    width: 60px; 
+    height: 60px; 
+    display: flex;
+    align-items: center; 
+    justify-content: center; 
+    text-align: center;
+    font-weight: bold;
+    cursor: pointer;
+    color: white;
+    font-size: 22px;
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+
+   
+    background-color: transparent; 
+    /* background-blend-mode: multiply; */
+}
+
+/* Button Hover Effect */
+.delete:hover, .AC:hover, .per:hover, 
+.set1 p:hover, .set2 p:hover, .set3 p:hover, .set4 p:hover {
+    transform: scale(1.1);
+    box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.3);
+    background-color:#F7CFD8;
+    color: #493D9E;
+}
